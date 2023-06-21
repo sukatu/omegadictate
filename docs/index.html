@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>Documentation | OmegaDictate</title>
+  <meta name="description" content="Your ThemeForest item Name and description">
+  <meta name="author" content="harnishdesign.net">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template">OmegaDictate </a>
+          <span class="text-2 ml-2">v1.0</span>
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+
+            </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+            <ul class="nav flex-column">
+              <!-- <li class="nav-item"><a class="nav-link" href="#idocs_installation">Installation</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">Usage</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_sass">Plugin Functionality</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">Plugin Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">Browser Compatibility</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">Limitations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#trouble">Troubleshooting</a></li>
+              <li class="nav-item"><a class="nav-link" href="#conclude">Conclusion</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <!-- Getting Started
+		============================ -->
+          <section id="idocs_start">
+            <h1>OmegateDictate: Speech-to-Text Plugin</h1>
+            <p class="lead">The Speech-to-Text plugin allows you to easily integrate speech recognition functionality
+              into your web application. It utilizes the Web Speech API to convert spoken language into written text.
+            </p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Version:</strong> 1.0</li>
+                  <li><strong>Author:</strong> <a href="http://www.harnishdesign.net" target="_blank">Issa Sukatu
+                      Abdullahi</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong class="font-weight-700">Created:</strong> 21 June, 2023</li>
+                  <li><strong>Last Update:</strong> 22 June, 2023</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- HTML Structure
+		============================ -->
+          <section id="idocs_html_structure">
+            <h2>Getting Started</h2>
+            <p>To use the Speech-to-Text plugin, follow these steps:</p>
+            Include the necessary CSS and JavaScript dependencies in your HTML file. Add the following lines within the
+
+            <head> tag:
+              <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+<code>
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" /&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /&gt;
+  &lt;script src="path/to/speech-to-text-plugin.js"&gt;&lt;/script&gt;
+</code>
+
+&lt;/head&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              <p class="alert alert-info">Replace "path/to/speech-to-text-plugin.js" with the actual path to the
+                JavaScript file containing the plugin code.</p>
+
+
+              <p>Create the HTML structure for the speech recognition interface. You can use the following example as a
+                starting point:</p>
+              Include the necessary CSS and JavaScript dependencies in your HTML file. Add the following lines within
+              the
+
+              <head> tag:
+                <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+   <code>
+      &lt;div class="container mt-5"&gt;
+        &lt;h1&gt;Speech to Text&lt;/h1&gt;
+        &lt;div class="my-3"&gt;
+          &lt;button id="start-btn" class="btn btn-primary"&gt; &lt;i class="fa fa-microphone"&gt;&lt;/i&gt; Start&lt;/button&gt;
+          &lt;button id="pause-btn" class="btn btn-secondary" disabled&gt; &lt;i class="fa fa-pause"&gt;&lt;/i&gt; Pause&lt;/button&gt;
+          &lt;button id="continue-btn" class="btn btn-success"&gt; &lt;i class="fa fa-play"&gt;&lt;/i&gt; Continue&lt;/button&gt;
+          &lt;button id="end-btn" class="btn btn-danger" disabled&gt; &lt;i class="fa fa-stop"&gt;&lt;/i&gt; End&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="mb-3"&gt;
+          &lt;textarea id="output" class="form-control" rows="5"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+
+&lt;/head&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p class="alert alert-info">Customize the layout and styling as needed.</p>
+
+
+
+
+                <p>Initialize the plugin by calling the SpeechToTextPlugin() function. Place the following line of code
+                  at the end of your HTML file, just before the closing
+</body> tag:</p>
+
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+  
+  &lt;!--
+  ============================== --&gt;
+  
+  &lt;/head&gt;
+  &lt;body&gt;
+  <code>
+    &lt;script&gt;
+      SpeechToTextPlugin();
+    &lt;/script&gt;
+  </code>
+  &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+</section>
+
+<hr class="divider">
+
+<!-- Sass
+		============================ -->
+<section id="idocs_sass">
+  <h2>Plugin Functionality</h2>
+  <p>The Speech-to-Text plugin provides the following functionality:</p>
+  <ul>
+    <li>Start Button: Clicking the "Start" button initiates the speech recognition process. If microphone permission
+      hasn't been granted, it will request permission from the user. Once started, the button becomes disabled, and
+      other relevant buttons are enabled.</li>
+    <li>Pause Button: Clicking the "Pause" button pauses the speech recognition. The button becomes disabled, and the
+      "Continue" and "End" buttons become enabled.</li>
+    <li>Continue Button: Clicking the "Continue" button resumes the speech recognition after it has been paused. The
+      button becomes disabled, and the "Pause" and "End" buttons become enabled.</li>
+    <li>End Button: Clicking the "End" button stops the speech recognition process. The button becomes disabled, and
+      other buttons are enabled. Note that stopping the process also clears the recognition output.</li>
+    <li>Output Textarea: The textarea with the ID "output" displays the recognized text. It updates in real-time as
+      speech is transcribed. You can also manually input text into the textarea, which will be considered as part of the
+      final transcript.</li>
+  </ul>
+</section>
+
+<hr class="divider">
+
+<!-- Color Schemes
+		============================ -->
+<section id="idocs_color_schemes">
+  <h2>Plugin Events</h2>
+  <p>The Speech-to-Text plugin triggers the following events:</p>
+  <ul>
+    <li><code>start()</code> - Blue Color</li>
+    <li><code>pause()</code> - Fired when the speech recognition is paused.</li>
+    <li><code>continue()</code> - Fired when the speech recognition resumes after being paused.</li>
+    <li><code>end()</code> - Fired when the speech recognition process ends.</li>
+    <li><code>error()</code> - Fired if an error occurs during the speech recognition process.</li>
+  </ul>
+  <p>You can listen to these events and add custom logic as needed.</p>
+
+</section>
+
+<hr class="divider">
+
+<!-- Customization
+		============================ -->
+<section id="idocs_theme_customization">
+  <h2>Browser Compatibility</h2>
+  <p>The Speech-to-Text plugin relies on the Web Speech API, which is supported in modern browsers, including Google
+    Chrome and Mozilla Firefox. Please refer to the Web Speech API documentation for the latest browser compatibility
+    information.</p>
+
+</section>
+
+<hr class="divider">
+
+<!-- Logo Settings
+		============================ -->
+<section id="idocs_logo_settings">
+  <h2>Limitations</h2>
+  <p>The Logo Container can be found in the Header Container - <code>&lt;header&gt;</code></p>
+  <ul>
+    <li>The accuracy of speech recognition may vary depending on factors such as ambient noise and pronunciation.</li>
+    <li>The plugin requires user permission to access the microphone. If permission is denied, the speech recognition
+      functionality will not work.</li>
+    <li>The plugin is currently designed for the English language (recognition.lang = "en-US"). Modifying it to support
+      other languages may require additional customization.</li>
+  </ul>
+</section>
+
+<section id="trouble">
+  <h2>Troubleshooting</h2>
+  <p>If you encounter any issues with the Speech-to-Text plugin, consider the following troubleshooting steps:</p>
+  <ol>
+    <li>Check browser compatibility: Ensure that you are using a browser that supports the Web Speech API.</li>
+
+    <li>Verify microphone access: Make sure that the browser has permission to access the microphone. You can check the
+      browser settings to grant or revoke access.</li>
+
+    <li>Review the console: If there are any errors, check the browser console for error messages. The plugin may log
+      relevant information or error details.</li>
+
+    <li>Seek community support: If the issue persists, reach out to the developer community or consult relevant
+      documentation to get assistance.</li>
+  </ol>
+</section>
+<section id="conclude">
+  <h2>Conclusion</h2>
+  <p>The Speech-to-Text plugin simplifies the integration of speech recognition functionality into your web application.
+    By following the steps outlined in this documentation, you can quickly enable users to convert spoken language into
+    written text. Customize the plugin according to your specific requirements and enhance the user experience with
+    voice input.</p>
+
+</section>
+
+
+<hr class="divider">
+
+
+<h3 id="v1-0">Version 1.0 <small class="text-muted">(21 June, 2023)</small></h3>
+<p>Initial Release</p>
+</section>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+<!-- Document Wrapper end -->
+
+<!-- Back To Top -->
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+    class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script>
+<!-- Easing -->
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<!-- Magnific Popup -->
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+
+</html>
