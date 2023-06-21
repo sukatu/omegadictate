@@ -1,5 +1,5 @@
 (function () {
-    function SpeechToText(elementId) {
+    function OmegaDictate(elementId) {
       // Check if browser supports the Web Speech API
       if ("webkitSpeechRecognition" in window) {
         const recognition = new webkitSpeechRecognition();
@@ -116,6 +116,6 @@
     }
   
     // Expose the SpeechToText function globally
-    window.SpeechToText = SpeechToText;
+    window.OmegaDictate = OmegaDictate;
   })();
   
